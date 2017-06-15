@@ -9,7 +9,7 @@ driver.get('http://www.baseballamerica.com/draftdb/index.php')
 #driver.implicitly_wait(10)
 
 #Lets grab the title
-title = driver.get_element_by_tag_name('title')
+title = driver.find_element_by_tag_name('title')
 title.text
 
 # We want to switch to the 2016 year and notice that
@@ -19,7 +19,7 @@ selectYear = Select(driver.find_element_by_name('year'))
 
 # Three ways to pick 2016
 selectYear.select_by_index(1)
-selectYear.select_by_visible_text("text")
+selectYear.select_by_visible_text("2016")
 selectYear.select_by_value('2016')
 
 

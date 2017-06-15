@@ -33,4 +33,6 @@ Save the file and close it.  Then in the terminal type `source .bash_profile`.
 
 Check to see it's now there `echo $PATH` then `echo geckodriver`.  If it worked we are ready to begin!
 
+(Selenium Docs)[http://selenium-python.readthedocs.io/locating-elements.html]
+
 FYI: http://exercism.io
